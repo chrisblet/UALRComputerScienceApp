@@ -18,6 +18,8 @@ var connection = mysql.createConnection({
 
 // To access database command prompt, use following command in bash, and enter password:
 // $ mysql -h connect-c9.ckrgpw7vzckl.us-east-2.rds.amazonaws.com -P 3306 -u tbdUser -p
+// To user our current database after inputting credentials:
+// use tbd_Database;
 
 var q = 'SELECT * FROM users';
 connection.query(q, function(err, results) {

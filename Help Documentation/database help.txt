@@ -1,0 +1,39 @@
+**Information regarding database:     
+    host: 'connect-c9.ckrgpw7vzckl.us-east-2.rds.amazonaws.com',
+    port: '3306',
+    user: 'tbdUser',
+    password: 'TBD_coolRanchDoritos',
+    database: 'tbd_Database'
+
+**To be able to view the data within our database, use MySQL Workbench:
+https://www.mysql.com/products/workbench/
+Use the above information to connect with our database once workbench is installed.
+To view data in the workbench:
+ - click on schema view in navigator window
+ - drop down the database, tables etc.
+ - right-click on column you want data from, click "Select rows"
+You can also perform queries within the query window of the workbench
+
+**To access sql prompt in cloud9, use following command in bash, enter password when prompted:
+$ mysql -h connect-c9.ckrgpw7vzckl.us-east-2.rds.amazonaws.com -P 3306 -u tbdUser -p
+
+Once the sql prompt comes up, use this command to use our current database:
+use tbd_Database;
+
+**Common SQL commands:
+// to create a table:
+CREATE TABLE users ()
+    username VARCHAR(255) PRIMARY KEY
+    //password VARCHAR(255)
+);
+
+// to add values to an existing column
+INSERT INTO users (username)
+VALUES
+    ('student1'),
+    ('student2');
+
+// to add a column to an existing table
+ALTER TABLE table_name
+  ADD column_name column_definition;
+  
