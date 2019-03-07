@@ -10,7 +10,18 @@ if (!empty($username) && !empty($password))
         $userAlreadyExists = "This username is already in use.";
     } else 
     {
-        
+        $insert = "INSERT INTO tblUsers (username, password)
+        VALUES ('$username', '$password')";
+                if ($mysqli->query($insert) == true)
+        {
+            setCookie("username", $_POST['username']);
+            setCookie("password", $_POST['password']);
+            header('Location: home.html');
+        } else {
+            /* echo '<pre>', var_dump($mysqli), '</pre>'; */
+            $userAlreadyExists = "Username already exists.";
+            die(mysqli_error);
+        }
     }
 }
 ?>
