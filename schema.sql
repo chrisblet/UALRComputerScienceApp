@@ -10,4 +10,4 @@ VALUES
 
 
 ALTER TABLE table_name
-  ADD column_name column_definition;    
+  ADD column_name column_definition;

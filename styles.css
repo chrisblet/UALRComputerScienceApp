@@ -141,3 +141,49 @@ html{
 img::selection{
     background:transparent;
 }
+
+.card-fluid{
+    color: black;
+    background: white;
+    margin-bottom: 2rem;
+    
+}
+
+
+.card-deck {
+    margin-bottom: 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+}
+.wrap {
+    display: flex;
+    background: white;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+
+}
+
+.wrap:hover {
+    background: #6f2232;
+    color: white;
+       
+}
+
+.ico-wrap {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
