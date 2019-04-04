@@ -1,3 +1,10 @@
+<?php
+$username = $_COOKIE["Username"];
+$password = $_COOKIE["Password"];
+
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,21 +17,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    
     <link rel="stylesheet" href="styles.css">
     
-    <title>UALR-Contact</title>
+    <title>UALR-Events & Clubs</title>
+    
+ 
   </head>
   
   
    <!-- NAVBAR -->
    <nav class="navbar navbar-light" id="mainNav">
       <div class="container">
-          <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"> Contact</a>
+          <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"> Events & Clubs</a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a href ="Home.html" class="nav-link js-scroll-trigger">Home Page</a></li>
               <li class="nav-item"><a href ="Scholarship.html" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
               <li class="nav-item"><a href ="Housing.html" class="nav-link js-scroll-trigger">Housing Information</a></li>
-              <li class="nav-item"><a href ="Login.php" class="nav-link js-scroll-trigger">Register/Login</a></li>
+              <li class="nav-item"><a href ="Contact.html" class="nav-link js-scroll-trigger">Contact</a></li>
+              <li class="nav-item"><a href ="Userhome.html" class="nav-link js-scroll-trigger">User Home</a></li>
+              <li class="nav-item"><a href ="CS Resources.html" class="nav-link js-scroll-trigger">CS Resources</a></li>
+              <li class="nav-item"><a href ="Class List & Degree Plan.html" class="nav-link js-scroll-trigger">Class List & Degree Plan</a></li>
+              <li class="nav-item"><a href ="Myprofile.html" class="nav-link js-scroll-trigger">My Profile</a></li>
               </ul>
           </div><!-- END nabarResponsive -->
       </div><!-- END container -->
@@ -32,6 +45,7 @@
   
   
   <body>
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

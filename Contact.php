@@ -1,3 +1,9 @@
+<?php
+$username = $_COOKIE["Username"];
+$password = $_COOKIE["Password"];
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,27 +16,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    
     <link rel="stylesheet" href="styles.css">
     
-    <title>UALR-Housing Information</title>
+    <title>UALR-Contact</title>
   </head>
   
   
    <!-- NAVBAR -->
    <nav class="navbar navbar-light" id="mainNav">
       <div class="container">
-          <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"> Housing Information</a>
+          <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"> Contact</a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href ="Home.html" class="nav-link js-scroll-trigger">Home Page</a></li>
-              <li class="nav-item"><a href ="Scholarship.html" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
+              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home Page</a></li>
+              <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
+              <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
               <li class="nav-item"><a href ="Login.php" class="nav-link js-scroll-trigger">Register/Login</a></li>
-              <li class="nav-item"><a href ="Contact.html" class="nav-link js-scroll-trigger">Contact</a></li>
               </ul>
           </div><!-- END nabarResponsive -->
       </div><!-- END container -->
    </nav><!-- NAVBAR --> 
   
-  <!-- NAVBAR --> 
+  
   <body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
