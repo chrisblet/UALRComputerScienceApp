@@ -195,3 +195,30 @@ section {
     margin: 1rem;
     padding-right: 1rem;
 }
+
+#footer .container-fluid {
+    background-color: #6f2232;    
+}
+
+footer{
+    background-color:#6f2232;
+}
+
+#sticky-footer  .container {
+    color: white;
+}
+
+#sticky-footer  .fab {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
