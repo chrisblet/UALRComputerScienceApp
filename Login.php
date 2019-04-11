@@ -8,7 +8,7 @@ if (isset($_POST['username']) && isset($_POST['password']))
     {
         setCookie("Username", $_POST['username']);
         setCookie("Password", $_POST['password']);
-        header('Location: Home.php');
+        header('Location: index.php');
     }
     else
     {
@@ -49,7 +49,13 @@ if (isset($_POST['username']) && isset($_POST['password']))
   
   
   <body>
-    <div class ="container">
+    <div class ="container" id="loginform">
+       <div class ="row text-center">
+        <div class ="col text-center text-white text-drop">
+          <br><br><br>
+            <h2>Please Sign in</h2>
+            </div>
+        </div>
       <div class="logForm col-md-2 offset-md-5 text-center">
         <form action="Login.php" method="post">
         <?php if(!empty($loginFail)) { echo "<label class='error'>$loginFail</label>"; } ?>
@@ -59,10 +65,83 @@ if (isset($_POST['username']) && isset($_POST['password']))
         </form>
       </div>
     </div>
+   
+   
+   <div class="container col-md-8 col-lg-4">
+    <div class="row mbr-justify-content-center">
+   <a href ="newuser.php"> 
+  <div class="wrap" id = "newuserwrap">
+     <div class="ico-wrap">
+        <span class="mbr-iconfont fa-address-card fa"></span>
+      </div>
+          <div class="text-wrap vcenter">
+              <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">New Users | Click to Register
+                    <span></span>
+                    </h2>
+                    <p class="mbr-fonts-style text1 mbr-text display-6">Register today and gain access to computer science resources, university events, degree plans, and local interships or job openings. </p>
+     </div>
+  </div>
+  </a>
+  </div>
+  </div>
+  
     
     <div class="col-md-2 offset-md-5 text-center" style="margin-top: 50px">
     <label class="textLink"><a href="newuser.php">New User?</a></label>
     </div>
+    
+    
+    
+    <!-- Footer -->
+ <div class="d-flex flex-column">
+  <div id="footer">
+    <div class="container-fluid ">
+      <div class="row  ">
+        <div class="col-md-3 col-sm-3 col-12"><br>
+            <img src="img/UAFooter.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-4 col-sm-4 col-12"><br><br>
+            <span class="align-middle"><p class="lead text-white">UA Little Rock is a metropolitan research university in the South that provides accessibility to a quality education through flexible learning and unparalleled internship opportunities.</p></span>
+        </div>
+          
+        <div class ="col-md-3 col-sm-3 col-6 text-center">
+          <p class="lead text-white">
+              <br><br>
+              2801 S. University Ave.<br> Little Rock, AR 72204 <br><br> <b>501-569-3000</b></p>
+        </div>       
+          <div class = "col-md-2 col-sm-2 col-6 text-right" id="links">           
+            <div class="col-md-12   ">
+              <h1 class="font-weight-light mt-4 text-white">Links</h1>
+              <ul class="list-unstyled">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Scholarship.php">Scholarships</a></li>
+                <li><a href="Housing.php">Housing</a></li>
+                <li><a href="Login.php">Login</a></li>
+                <li><a href="newuser.php">Register</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+              </ul>
+            </div>             
+          </div>          
+      </div>     
+    </div>
+  </div>
+  
+    <footer id="sticky-footer" class=" text-white">
+    <div class="container text-center">
+      <small>Copyright &copy; ToBeDeveloped</small>
+        &emsp;
+        &emsp;
+    <a href ="https://www.facebook.com/ualittlerock"><i class ="fab fa-facebook-square fa-2x" ></i></a>
+        <a href ="https://twitter.com/UALR"><i class ="fab fa-twitter-square fa-2x"></i></a>
+        <a href ="https://www.youtube.com/user/UALRVIDEO"><i class ="fab fa-youtube-square fa-2x"></i></a>
+        <a href ="https://www.linkedin.com/groups/University-Arkansas-Little-Rock-UALR-65628/"><i class ="fab fa-linkedin fa-2x"></i></a>
+    </div>
+  </footer>
+</div>
+
+<!-- END Footer -->
+    
+ 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

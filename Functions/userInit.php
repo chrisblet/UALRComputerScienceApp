@@ -22,4 +22,15 @@ function passwordMatch($username, $pwd) {
         return true;
     } else return false;
 }
+
+function changeUsername($oldusername, $newusername, $pwd) {
+    global $mysqli;
+    $changequery = $mysqli->query("UPDATE users set username = '$newusername'
+    WHERE username = '$oldusername' AND password = '$pwd'");
+    if ($mysqli->query($changequery) === true) {
+        return true;
+    } else {
+        return false;
+    }
+}
 ?>

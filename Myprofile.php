@@ -5,7 +5,11 @@ $password = $_COOKIE["Password"];
 if (empty($username) || empty($password)) {
   echo "<script> alert('You are not logged in.')</script>";
   header('Location: Login.php');
+} else {
+  
 }
+
+
 
 ?>
 <!doctype html>
@@ -33,7 +37,7 @@ if (empty($username) || empty($password)) {
           <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home Page</a></li>
               <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
-              <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
+              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
               <li class="nav-item"><a href ="Contact.php" class="nav-link js-scroll-trigger">Contact</a></li>
               <li class="nav-item"><a href ="Userhome.php" class="nav-link js-scroll-trigger">User Home</a></li>
               <li class="nav-item"><a href ="Events & Clubs.php" class="nav-link js-scroll-trigger">Events & Clubs</a></li>
@@ -46,6 +50,14 @@ if (empty($username) || empty($password)) {
   
   
   <body>
+    <div class ="container">
+      <div class="logForm col-md-2 offset-md-5 text-center">
+        <form action="changeusername.php" method="post">
+          <input type="submit" value="Change Username" class="buttons btn btn-lg btn-primary btn-block">
+        </form>
+      </div>
+    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -38,6 +38,14 @@ $password = $_COOKIE["Password"];
   
   
   <body>
+    
+    <h1>Contact about addmissions</h1>
+    <ul>Location: 2801 S University Avenue, Little Rock, AR 72204</ul>
+    <ul>501-569-3333</ul>
+    <ul>501-569-8002 (fax)</ul>
+    <ul>elice@ualr.edu</ul>
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
