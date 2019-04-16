@@ -57,6 +57,14 @@ if (empty($username) || empty($password)) {
         </form>
       </div>
     </div>
+    <br>
+    <div class ="container">
+      <div class="logForm col-md-2 offset-md-5 text-center">
+        <form action="changepassword.php" method="post">
+          <input type="submit" value="Change Password" class="buttons btn btn-lg btn-primary btn-block">
+        </form>
+      </div>
+    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

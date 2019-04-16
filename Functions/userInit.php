@@ -25,12 +25,19 @@ function passwordMatch($username, $pwd) {
 
 function changeUsername($oldusername, $newusername, $pwd) {
     global $mysqli;
-    $changequery = $mysqli->query("UPDATE users set username = '$newusername'
+    $updatequery = $mysqli->query("UPDATE users set username = '$newusername'
     WHERE username = '$oldusername' AND password = '$pwd'");
-    if ($mysqli->query($changequery) === true) {
-        return true;
-    } else {
-        return false;
+    if ($mysqli->query($updatequery)) {
+
+    }
+}
+
+function changePassword($username, $oldpwd, $newpwd) {
+    global $mysqli;
+    $updatequery = $mysqli->query("UPDATE users set password = '$newpwd'
+    WHERE username = '$username' AND password = '$oldpwd'");
+    if ($mysqli->query($updatequery)) {
+
     }
 }
 ?>

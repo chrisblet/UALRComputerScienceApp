@@ -9,19 +9,20 @@ if (empty($username) || empty($password)) {
   echo "<script> alert('You are not logged in.')</script>";
   header('Location: Login.php');
 } else {
-        if (isset($_POST['oldusername']) && isset($_POST['newusername']) && isset($_POST['password']))
+        if (isset($_POST['username']) && isset($_POST['oldpassword']) && isset($_POST['newpassword']))
     {
        
-        if (authenticate($_POST['oldusername'], $_POST['password']) && $_POST['oldusername'] == $_COOKIE["Username"])
+        if (authenticate($_POST['username'], $_POST['oldpassword']) && $_POST['username'] == $_COOKIE["Username"])
         {
-            changeUsername($_POST['oldusername'], $_POST['newusername'], $_POST['password']);
-            setCookie("New Username", $_POST['username']);
-            setCookie("Password", $_POST['password']);
+            echo "<script> alert('Authenticated successfully')</script>";
+            changePassword($_POST['username'], $_POST['oldpassword'], $_POST['newpassword']);
+            setCookie("Username", $_POST['username']);
+            setCookie("New Password", $_POST['password']);
             header('Location: Myprofile.php');
         }
         else
         {
-            echo "<script> alert('Username change unsuccessful. Incorrect old username/password combination')</script>";
+            echo "<script> alert('Password change unsuccessful. Incorrect old username/password combination')</script>";
         }
     }
 
@@ -71,10 +72,10 @@ if (empty($username) || empty($password)) {
   <body>
     <div class ="container">
       <div class="logForm col-md-2 offset-md-5 text-center">
-        <form action="changeusername.php" method="post">
-          <input type="text" name="oldusername" class="form-control" placeholder="Old Username"><br>  
-          <input type="text" name="newusername" class="form-control" placeholder="New Username"><br>
-          <input type="password" name="password" class="form-control" placeholder="Password"><br>
+        <form action="changepassword.php" method="post">
+          <input type="text" name="username" class="form-control" placeholder="Username"><br>
+          <input type="password" name="oldpassword" class="form-control" placeholder="Old Password"><br>
+          <input type="password" name="newpassword" class="form-control" placeholder="New Password"><br>
           <input type="submit" value="Submit" class="buttons btn btn-lg btn-primary btn-block">
         </form>
       </div>
