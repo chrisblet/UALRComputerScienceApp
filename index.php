@@ -206,6 +206,7 @@ $password = $_COOKIE["Password"];
                 <li><a href="newuser.php">Register</a></li>
                 <li><a href="Contact.php">Contact</a></li>
                 <li><a href="Courses.php">Courses</a></li>
+                <li><a href="Userhome.php">User Home</a></li>
               </ul>
             </div>             
           </div>          

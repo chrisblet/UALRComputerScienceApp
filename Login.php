@@ -49,46 +49,101 @@ if (isset($_POST['username']) && isset($_POST['password']))
   
   
   <body>
-    <div class ="container" id="loginform">
+    <div class ="container col-9 col-md-5 col-xl-4" id="loginform">
+      <div class ="card">
        <div class ="row text-center">
-        <div class ="col text-center text-white text-drop">
-          <br><br><br>
-            <h2>Please Sign in</h2>
+        <div class ="col text-center text-white">
+            <h2>Login Here</h2>
             </div>
         </div>
-      <div class="logForm col-md-2 offset-md-5 text-center">
-        <form action="Login.php" method="post">
-        <?php if(!empty($loginFail)) { echo "<label class='error'>$loginFail</label>"; } ?>
-          <input type="text" name="username" class="form-control" placeholder="Username"><br>
-          <input type="password" name="password" class="form-control" placeholder="Password"><br>
-          <input type="submit" value="Submit" class="buttons btn btn-lg btn-primary btn-block">
-        </form>
+        <div class="row justify-content-center">
+        <div class="logForm col-9 col-md-9 align-self-center text-center">
+          <form action="Login.php" method="post">
+          <?php if(!empty($loginFail)) { echo "<label class='error'>$loginFail</label>"; } ?>
+            <input type="text" name="username" class="form-control" placeholder="Username"><br>
+            <input type="password" name="password" class="form-control" placeholder="Password"><br>
+            <input type="submit" value="Submit" class="buttons btn btn-lg btn-primary btn-block">
+          </form>
+        </div>
+        </div>
       </div>
     </div>
-   
-   
-   <div class="container col-md-8 col-lg-4">
-    <div class="row mbr-justify-content-center">
-   <a href ="newuser.php"> 
-  <div class="wrap" id = "newuserwrap">
-     <div class="ico-wrap">
-        <span class="mbr-iconfont fa-address-card fa"></span>
-      </div>
-          <div class="text-wrap vcenter">
-              <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">New Users | Click to Register
-                    <span></span>
-                    </h2>
-                    <p class="mbr-fonts-style text1 mbr-text display-6">Register today and gain access to computer science resources, university events, degree plans, and local interships or job openings. </p>
-     </div>
-  </div>
-  </a>
-  </div>
-  </div>
-  
     
-    <div class="col-md-2 offset-md-5 text-center" style="margin-top: 50px">
-    <label class="textLink"><a href="newuser.php">New User?</a></label>
+
+   
+   
+
+  
+  <div id="regbonus">
+      <div class="container col col-md-9 col-xl-7 " >
+            <div class = "card">
+            <div class ="row  text-white justify-content-center  ">
+                <div class ="col text-center"><br>
+          <h3> Register to Access Exclusive Content   </h3> <br></div>
+            </div>
+             
+    
+      <div class="row  justify-content-center">
+          
+           <div class="col-md-5 col-8 col-lg-5 ">
+               <div id="regcard">
+              <div class="card bg-dark text-center">
+      <div class="card-img-overlay">
+        <h5 class="card-title text-white text-drop">CS Resources</h5>
+        <p class="card-text"></p>
+        
+      </div>
     </div>
+               </div>      
+            </div>  
+       <div class="col-md-5 col-8 col-lg-5 ">
+           <div id="regcard">
+          <div  class="card bg-dark text-white text-drop text-center">
+  
+  <div class="card-img-overlay">
+    <h5 class="card-title">UALR Events & Clubs</h5>
+    <p class="card-text"></p>
+    
+  </div>
+</div>
+    </div>       
+          </div>
+       </div>
+      <div class="row  justify-content-center">
+       <div class="col-md-5 col-8 col-lg-5">
+           <div id="regcard">
+          <div class="card bg-dark text-white text-drop text-center">
+  
+  <div class="card-img-overlay">
+    <h5 class="card-title">Job / Intership Board</h5>
+    <p class="card-text"></p>
+    
+  </div>
+</div>
+           </div> 
+          </div>
+       <div class="col-md-5 col-8 col-lg-5">
+           <div id="regcard">
+          <div class="card bg-dark text-white text-drop text-center">
+  
+  <div class="card-img-overlay">
+    <h5 class="card-title">Degree & Class List</h5>
+    <p class="card-text"></p>
+    
+  </div>
+</div>
+           </div>    
+          </div>     
+       </div><br>
+          <div class ="row  justify-content-center">
+              
+          <a class="btn btn-primary" href="newuser.php" role="button">New Users Register Here</a></div><br>
+      </div> 
+         </div> 
+          
+      </div>
+  
+  
     
     
     

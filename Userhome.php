@@ -36,6 +36,152 @@
   
   
   <body>
+    
+   <div id="userhome" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3 text-white text-drop">User Home</h1>
+    <p class="lead text-white tag-line col-md-9 col-lg-8">Sharpen your skills, locate an intership, build lasting friendships, and prepare for the future at UALR.</p>
+  </div>
+</div>
+    
+      
+      
+      
+      
+      
+      
+      
+      <div id="usernavhub">
+   <div class="container" >
+            
+            <div class ="row text-white justify-content-center text-drop ">
+          <h3>Navigation Hub  </h3> </div>
+            
+             
+    
+      <div class="row  justify-content-center">
+          
+       <div class="col-md-6 ">
+           <a href ="CS Resources.php">
+          <div class="card bg-dark ">
+  <img src="img/csresource.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title text-white text-drop tag-line text-center ">CS Resources</h5>
+    <p class="card-text"></p>
+    
+  </div>
+</div>
+           </a>     
+        </div>  
+       <div class="col-md-6">
+           <a href ="...">
+          <div class="card bg-dark text-white text-drop ">
+  <img src="img/ualrclub.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title tag-line text-center">UALR Events & Clubs</h5>
+    <p class="card-text"></p>
+    
+  </div>
+</div>
+           </a> 
+          </div>
+       </div>
+                  <br>
+      <div class="row justify-content-center">
+       <div class="col-md-6">
+           <a href ="https://ualr.edu/eit/jobs/">
+          <div class="card bg-dark text-white text-drop ">
+  <img src="img/ualrjob.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title tag-line text-center">Job & Intership Board</h5>
+    <p class="card-text"></p>
+    
+  </div>
+</div>
+           </a>
+          </div>
+       <div class="col-md-6">
+           <a href ="Courses.php">
+          <div class="card bg-dark text-white text-drop">
+  <img src="img/degree.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title tag-line text-center">Degree & Class List</h5>
+    <p class="card-text"></p>
+    
+  </div>
+</div>
+           </a> 
+          </div>
+       
+       </div>
+      
+      
+      
+      </div>    
+      </div>
+      
+      
+      
+       <!-- Footer -->
+ <div class="d-flex flex-column">
+  <div id="footer">
+    <div class="container-fluid ">
+      <div class="row  ">
+        <div class="col-md-3 col-sm-3 col-12"><br>
+            <img src="img/UAFooter.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-4 col-sm-4 col-12"><br><br>
+            <span class="align-middle"><p class="lead text-white">UA Little Rock is a metropolitan research university in the South that provides accessibility to a quality education through flexible learning and unparalleled internship opportunities.</p></span>
+        </div>
+          
+        <div class ="col-md-3 col-sm-3 col-6 text-center">
+          <p class="lead text-white">
+              <br><br>
+              2801 S. University Ave.<br> Little Rock, AR 72204 <br><br> <b>501-569-3000</b></p>
+        </div>       
+          <div class = "col-md-2 col-sm-2 col-6 text-right" id="links">           
+            <div class="col-md-12   ">
+              <h1 class="font-weight-light mt-4 text-white">Links</h1>
+              <ul class="list-unstyled">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Scholarship.php">Scholarships</a></li>
+                <li><a href="Housing.php">Housing</a></li>
+                <li><a href="Login.php">Login</a></li>
+                <li><a href="newuser.php">Register</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+              </ul>
+            </div>             
+          </div>          
+      </div>     
+    </div>
+  </div>
+  
+    <footer id="sticky-footer" class=" text-white">
+    <div class="container text-center">
+      <small>Copyright &copy; ToBeDeveloped</small>
+        &emsp;
+        &emsp;
+    <a href ="https://www.facebook.com/ualittlerock"><i class ="fab fa-facebook-square fa-2x" ></i></a>
+        <a href ="https://twitter.com/UALR"><i class ="fab fa-twitter-square fa-2x"></i></a>
+        <a href ="https://www.youtube.com/user/UALRVIDEO"><i class ="fab fa-youtube-square fa-2x"></i></a>
+        <a href ="https://www.linkedin.com/groups/University-Arkansas-Little-Rock-UALR-65628/"><i class ="fab fa-linkedin fa-2x"></i></a>
+    </div>
+  </footer>
+</div>
+
+<!-- END Footer -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
