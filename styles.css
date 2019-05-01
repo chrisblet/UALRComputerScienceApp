@@ -432,6 +432,64 @@ footer{
     padding-right: 1rem;
 }
 
+#contact .iframe-container{
+    position: relative;
+    width: 100%;
+    
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+    
+}
+#contact .iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+#contact .container{
+    padding: 0rem;
+    margin-top:3rem;
+    margin-bottom:2rem;
+    width: 100%;
+}
+
+#contact .card{
+  border-radius:20px;
+}
+
+#contact .col-lg-6{
+    padding-top:1rem;
+}
+
+#contact .list-group-item{
+    border:0 none;
+}
+
+#contactjumbo{
+    background: url('img/contact.jpg') center ;
+    background-size: cover;
+    height: 75%;
+    margin-bottom: 2rem;
+}
+
+#contactjumbo .tag-line{
+   
+    font-weight: 400;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 20px;
+    padding: 15px 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 
 
 

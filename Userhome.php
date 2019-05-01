@@ -1,3 +1,16 @@
+<?php
+$username = $_COOKIE["Username"];
+$password = $_COOKIE["Password"];
+
+if (empty($username) || empty($password)) {
+  echo "<script> alert('You are not logged in.')</script>";
+  header('Location: Login.php');
+} else {
+  
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -37,88 +50,70 @@
   
   <body>
     
-   <div id="userhome" class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-3 text-white text-drop">User Home</h1>
-    <p class="lead text-white tag-line col-md-9 col-lg-8">Sharpen your skills, locate an intership, build lasting friendships, and prepare for the future at UALR.</p>
-  </div>
+ <div id="userhome" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3 text-white text-drop">User Home</h1>
+        <p class="lead text-white tag-line col-md-9 col-lg-8">Sharpen your skills, locate an intership, build lasting friendships, and prepare for the future at UALR.</p>
+      </div>
 </div>
     
       
-      
-      
-      
-      
-      
-      
-      <div id="usernavhub">
+<div id="usernavhub">
    <div class="container" >
-            
-            <div class ="row text-white justify-content-center text-drop ">
+        <div class ="row text-white justify-content-center text-drop ">
           <h3>Navigation Hub  </h3> </div>
-            
-             
-    
-      <div class="row  justify-content-center">
-          
-       <div class="col-md-6 ">
-           <a href ="CS Resources.php">
-          <div class="card bg-dark ">
-  <img src="img/csresource.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title text-white text-drop tag-line text-center ">CS Resources</h5>
-    <p class="card-text"></p>
-    
-  </div>
-</div>
-           </a>     
-        </div>  
+              <div class="row  justify-content-center">
+               <div class="col-md-6 ">
+                   <a href ="CS Resources.php">
+                      <div class="card bg-dark ">
+                          <img src="img/csresource.jpg" class="card-img" alt="...">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title text-white text-drop tag-line text-center ">CS Resources</h5>
+                            <p class="card-text"></p>
+                          </div>
+                        </div>
+                   </a>     
+            </div>  
        <div class="col-md-6">
-           <a href ="...">
+           <a href ="Clubs.php">
           <div class="card bg-dark text-white text-drop ">
-  <img src="img/ualrclub.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title tag-line text-center">UALR Events & Clubs</h5>
-    <p class="card-text"></p>
-    
-  </div>
-</div>
+              <img src="img/ualrclub.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title tag-line text-center">UALR Events & Clubs</h5>
+                <p class="card-text"></p>
+                
+              </div>
+            </div>
            </a> 
-          </div>
+         </div>
        </div>
-                  <br>
+        <br>
       <div class="row justify-content-center">
        <div class="col-md-6">
            <a href ="https://ualr.edu/eit/jobs/">
-          <div class="card bg-dark text-white text-drop ">
-  <img src="img/ualrjob.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title tag-line text-center">Job & Intership Board</h5>
-    <p class="card-text"></p>
-    
-  </div>
-</div>
-           </a>
-          </div>
+              <div class="card bg-dark text-white text-drop ">
+              <img src="img/ualrjob.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title tag-line text-center">Job & Intership Board</h5>
+                    <p class="card-text"></p>
+                  </div>
+            </div>
+          </a>
+     </div>
        <div class="col-md-6">
            <a href ="Courses.php">
-          <div class="card bg-dark text-white text-drop">
-  <img src="img/degree.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h5 class="card-title tag-line text-center">Degree & Class List</h5>
-    <p class="card-text"></p>
-    
-  </div>
-</div>
-           </a> 
-          </div>
-       
-       </div>
-      
-      
-      
-      </div>    
-      </div>
+              <div class="card bg-dark text-white text-drop">
+                  <img src="img/degree.jpg" class="card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title tag-line text-center">Degree & Class List</h5>
+                        <p class="card-text"></p>
+                      </div>
+            </div>
+          </a> 
+        </div>
+    </div>
+    </div>    
+ </div>
       
       
       

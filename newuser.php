@@ -18,7 +18,7 @@ if (!empty($username) && !empty($password) && !empty($email))
             echo "<script> alert('user creation successful.')</script>";
             setCookie("username", $_POST['username']);
             setCookie("password", $_POST['password']);
-            header('Location: index.php');
+            header('Location: Userhome.php');
         } else {
             $userAlreadyExists = "This username is already in use.";
             die(mysqli_error);
