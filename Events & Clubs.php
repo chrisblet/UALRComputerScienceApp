@@ -30,13 +30,13 @@ $password = $_COOKIE["Password"];
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href ="Home.php" class="nav-link js-scroll-trigger">Home Page</a></li>
+              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home Page</a></li>
               <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
               <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
               <li class="nav-item"><a href ="Contact.php" class="nav-link js-scroll-trigger">Contact</a></li>
               <li class="nav-item"><a href ="Userhome.php" class="nav-link js-scroll-trigger">User Home</a></li>
               <li class="nav-item"><a href ="CS Resources.php" class="nav-link js-scroll-trigger">CS Resources</a></li>
-              <li class="nav-item"><a href ="Class List & Degree Plan.html" class="nav-link js-scroll-trigger">Class List & Degree Plan</a></li>
+              <li class="nav-item"><a href ="Class List & Degree Plan.php" class="nav-link js-scroll-trigger">Class List & Degree Plan</a></li>
               <li class="nav-item"><a href ="Myprofile.php" class="nav-link js-scroll-trigger">My Profile</a></li>
               </ul>
           </div><!-- END nabarResponsive -->

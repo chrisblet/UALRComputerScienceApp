@@ -28,9 +28,15 @@
               </ul>
           </div><!-- END nabarResponsive -->
       </div><!-- END container -->
-   </nav><!-- NAVBAR --> 
+   </nav>
+   <!-- NAVBAR --> 
     
-    
+  <div id="scholarshipjumbo" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-white text-drop">Scholarships</h1>
+    <p class="lead text-white tag-line col-md-9 col-lg-8">Recieve financial assistance for your education. UALR has many scholarship opportunities available for new, current, or transfer students  </p>
+  </div>
+</div> 
     
     
     
@@ -80,8 +86,61 @@
     <h2>Arkansas Academy of Computing Scholarship*</h2>
     <p>Awarded to a full-time or part-time student majoring in computer science or information science. Academic accomplishment and financial need will be strongly considered.</p>
     <h6>*Denotes scholarships available through more than one department.</h6>
-   <!-- NAVBAR -->
 
+
+
+
+
+
+
+<!-- Footer -->
+ <div class="d-flex flex-column">
+  <div id="footer">
+    <div class="container-fluid ">
+      <div class="row  ">
+        <div class="col-md-3 col-sm-3 col-12"><br>
+            <img src="img/UAFooter.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-4 col-sm-4 col-12"><br><br>
+            <span class="align-middle"><p class="lead text-white">UA Little Rock is a metropolitan research university in the South that provides accessibility to a quality education through flexible learning and unparalleled internship opportunities.</p></span>
+        </div>
+          
+        <div class ="col-md-3 col-sm-3 col-6 text-center">
+          <p class="lead text-white">
+              <br><br>
+              2801 S. University Ave.<br> Little Rock, AR 72204 <br><br> <b>501-569-3000</b></p>
+        </div>       
+          <div class = "col-md-2 col-sm-2 col-6 text-right" id="links">           
+            <div class="col-md-12   ">
+              <h1 class="font-weight-light mt-4 text-white">Links</h1>
+              <ul class="list-unstyled">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Scholarship.php">Scholarships</a></li>
+                <li><a href="Housing.php">Housing</a></li>
+                <li><a href="Login.php">Login</a></li>
+                <li><a href="newuser.php">Register</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+              </ul>
+            </div>             
+          </div>          
+      </div>     
+    </div>
+  </div>
+  
+    <footer id="sticky-footer" class=" text-white">
+    <div class="container text-center">
+      <small>Copyright &copy; ToBeDeveloped</small>
+        &emsp;
+        &emsp;
+    <a href ="https://www.facebook.com/ualittlerock"><i class ="fab fa-facebook-square fa-2x" ></i></a>
+        <a href ="https://twitter.com/UALR"><i class ="fab fa-twitter-square fa-2x"></i></a>
+        <a href ="https://www.youtube.com/user/UALRVIDEO"><i class ="fab fa-youtube-square fa-2x"></i></a>
+        <a href ="https://www.linkedin.com/groups/University-Arkansas-Little-Rock-UALR-65628/"><i class ="fab fa-linkedin fa-2x"></i></a>
+    </div>
+  </footer>
+</div>
+
+<!-- END Footer -->
   
   
   

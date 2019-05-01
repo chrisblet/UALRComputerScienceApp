@@ -168,7 +168,7 @@ $password = $_COOKIE["Password"];
       <div class="card-body">
         <h2 class="card-title">Study Computer Science @ EIT</h2>
         <p class="card-text">The Donaghey College of Engineering and Information Technology (EIT) is a key partner with industry, research, and education in the capital region of Little Rock, Arkansas. EIT is a vital part of the eco-system of the region and is an active partner with its many constituents within the state and the region. We are a metropolitan university positioned in a community and region that is innovative and is collaborative with engineering and IT professionals. Now is an exciting time to be a part of UALR EIT.</p>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Click for Enrollment Information</button>
+          <a class="btn btn-primary btn-lg btn-block" href="https://ualr.edu/admissions/student-guide/" role="button">Click for Enrollment Information</a>
       </div>
     </div>
   </div>
@@ -207,6 +207,7 @@ $password = $_COOKIE["Password"];
                 <li><a href="Contact.php">Contact</a></li>
                 <li><a href="Courses.php">Courses</a></li>
                 <li><a href="Userhome.php">User Home</a></li>
+                 <li><a href="Clubs.php">Clubs</a></li>
               </ul>
             </div>             
           </div>          

@@ -23,6 +23,36 @@ $password = $_COOKIE["Password"];
   </head>
   
    <body>
+     
+           <!-- NAVBAR -->
+   <nav class="navbar navbar-light" id="mainNav">
+      <div class="container">
+          <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"> Computer Science</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
+              <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
+              <li class="nav-item"><a href ="Login.php" class="nav-link js-scroll-trigger">Register/Login</a></li>
+               <li class="nav-item"><a href ="Myprofile.php" class="nav-link js-scroll-trigger">My Profile</a></li>
+               <li class="nav-item"><a href ="Class List & Degree Plan.php" class="nav-link js-scroll-trigger">Degree/Classes</a></li>
+                <li class="nav-item"><a href ="logout.php" class="nav-link js-scroll-trigger">Log out</a></li>
+              <li class="nav-item"><a href ="Contact.php" class="nav-link js-scroll-trigger">Contact</a></li>
+              </ul>
+          </div><!-- END nabarResponsive -->
+      </div><!-- END container -->
+   </nav>
+   <!-- END NAVBAR --> 
+   
+<div id="housingjumbo" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-white text-drop">Campus Living</h1>
+    <p class="lead text-white tag-line col-md-9 col-lg-8">Living on campus at UA Little Rock is an opportunity to be in the middle of it all. Be a part of a residential community and a social setting that is brimming with possibility.</p>
+  </div>
+</div>  
+     
+     
+     
   
   <h1>Campus Living Options</h1>
     <p>Living on campus at UA Little Rock is an opportunity to be in the middle of it all. Being a part of a residential community has many perks, from a greater chance at academic success to a built-in social setting that is brimming with possibility.</p>

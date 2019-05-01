@@ -399,8 +399,38 @@ footer{
         -2px -1px 0px #000;
 }
 
+#scholarshipjumbo{
+    background: url('img/scholarships.jpg') center ;
+    background-size: cover;
+    height: 75%;
+    margin-bottom: 2rem;
+}
 
 
+#scholarshipjumbo .tag-line{
+    font-weight: 400;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 20px;
+    padding: 15px 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#housingjumbo{
+    background: url('img/housing.jpg') center ;
+    background-size: cover;
+    height: 75%;
+    margin-bottom: 2rem;
+}
+
+#housingjumbo .tag-line{
+    font-weight: 400;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 20px;
+    padding: 15px 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 
 

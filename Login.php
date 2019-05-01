@@ -8,7 +8,7 @@ if (isset($_POST['username']) && isset($_POST['password']))
     {
         setCookie("Username", $_POST['username']);
         setCookie("Password", $_POST['password']);
-        header('Location: index.php');
+        header('Location: Userhome.php');
     }
     else
     {

@@ -9,8 +9,6 @@ if (empty($username) || empty($password)) {
   
 }
 
-
-
 ?>
 <!doctype html>
 <html lang="en">
