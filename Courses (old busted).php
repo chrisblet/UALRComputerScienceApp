@@ -12,22 +12,25 @@
 </head>
   
   
-<!-- NAVBAR -->
-<nav class="navbar navbar-light" id="mainNav">
-  <div class="container">
-      <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <!-- NAVBAR -->
+   <nav class="navbar navbar-light" id="mainNav">
+      <div class="container">
+          <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"> Degrees and Courses</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home Page</a></li>
               <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
               <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
+              <li class="nav-item"><a href ="Login.php" class="nav-link js-scroll-trigger">Register/Login</a></li>
+               <li class="nav-item"><a href ="Myprofile.php" class="nav-link js-scroll-trigger">My Profile</a></li>
+               <li class="nav-item"><a href ="Class List & Degree Plan.php" class="nav-link js-scroll-trigger">Degree/Classes</a></li>
+                <li class="nav-item"><a href ="logout.php" class="nav-link js-scroll-trigger">Log out</a></li>
               <li class="nav-item"><a href ="Contact.php" class="nav-link js-scroll-trigger">Contact</a></li>
-              <li class="nav-item"><a href ="Userhome.php" class="nav-link js-scroll-trigger">User Home Place Holder</a></li>
-          </ul>
-      </div><!-- END nabarResponsive -->
-    </div><!-- END container -->
-</nav><!-- NAVBAR --> 
+              </ul>
+          </div><!-- END nabarResponsive -->
+      </div><!-- END container -->
+   </nav>
+   <!-- END NAVBAR --> 
   
   
  <body>
@@ -49,8 +52,7 @@
             
         <p>Courses</p>
     
-        <?php
-			//include 'connect.php'; //wasn't sure how to work with php pointers, so I used a direct connection
+      <?php
 			$dbHost = "connect-c9.ckrgpw7vzckl.us-east-2.rds.amazonaws.com";
 			$dbUsername = "tbdUser";
 			$dbPassword = "TBD_coolRanchDoritos";
@@ -70,6 +72,21 @@
             $rcheck = mysqli_num_rows($result);
                 
             echo "<table border='1'>
+            
+           <style>
+             th {
+                  background-color: #6F2232;
+                  color: white;
+                }
+                
+              td {
+                    text-align: left;
+                    padding: 4px;
+                }
+            
+            tr:nth-child(even) {background-color: #f2f2f2;}
+           </style>
+            
             <tr>
             <th>Course Code</th>
             <th>Course Name</th>
@@ -98,7 +115,7 @@
         </div>
     </div>
         
-<!-- Footer -->
+ <!-- Footer -->
  <div class="d-flex flex-column">
   <div id="footer">
     <div class="container-fluid ">
@@ -126,19 +143,21 @@
                 <li><a href="newuser.php">Register</a></li>
                 <li><a href="Contact.php">Contact</a></li>
                 <li><a href="Courses.php">Courses</a></li>
+                <li><a href="Userhome.php">User Home</a></li>
+                <li><a href="Clubs.php">Clubs</a></li>
               </ul>
             </div>             
           </div>          
       </div>     
     </div>
   </div>
-      
+  
     <footer id="sticky-footer" class=" text-white">
     <div class="container text-center">
       <small>Copyright &copy; ToBeDeveloped</small>
         &emsp;
         &emsp;
-        <a href ="https://www.facebook.com/ualittlerock"><i class ="fab fa-facebook-square fa-2x" ></i></a>
+    <a href ="https://www.facebook.com/ualittlerock"><i class ="fab fa-facebook-square fa-2x" ></i></a>
         <a href ="https://twitter.com/UALR"><i class ="fab fa-twitter-square fa-2x"></i></a>
         <a href ="https://www.youtube.com/user/UALRVIDEO"><i class ="fab fa-youtube-square fa-2x"></i></a>
         <a href ="https://www.linkedin.com/groups/University-Arkansas-Little-Rock-UALR-65628/"><i class ="fab fa-linkedin fa-2x"></i></a>

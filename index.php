@@ -161,7 +161,7 @@ $password = $_COOKIE["Password"];
    
 <div class="card-fluid ">
   <div class="row no-gutters">
-    <div class="col-md-6 col-sm-12 col align-self-center ">
+    <div class="col-md-6 col-12 col align-self-center ">
       <img src="img/eit-building.jpg" class="card-img" alt="...">
     </div>
     <div class="col-md-6 col align-self-center">
@@ -205,9 +205,9 @@ $password = $_COOKIE["Password"];
                 <li><a href="Login.php">Login</a></li>
                 <li><a href="newuser.php">Register</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-                <li><a href="Courses.php">Courses</a></li>
+                <li><a href="Class_List_&_Degree_plan.php">Classes and Degrees</a></li>
                 <li><a href="Userhome.php">User Home</a></li>
-                 <li><a href="Clubs.php">Clubs</a></li>
+                <li><a href="Clubs.php">Clubs</a></li>
               </ul>
             </div>             
           </div>          

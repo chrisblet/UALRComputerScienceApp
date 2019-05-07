@@ -101,7 +101,7 @@ if (empty($username) || empty($password)) {
           </a>
      </div>
        <div class="col-md-6">
-           <a href ="Courses.php">
+           <a href ="Class List & Degree Plan.php">
               <div class="card bg-dark text-white text-drop">
                   <img src="img/degree.jpg" class="card-img" alt="...">
                       <div class="card-img-overlay">
@@ -114,6 +114,23 @@ if (empty($username) || empty($password)) {
     </div>
     </div>    
  </div>
+ 
+ 
+ <div class ="container">
+      <div class="logForm col-md-2 offset-md-5 text-center">
+        <form action="changeusername.php" method="post">
+          <input type="submit" value="Change Username" class="buttons btn btn-lg btn-primary btn-block">
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class ="container">
+      <div class="logForm col-md-2 offset-md-5 text-center">
+        <form action="changepassword.php" method="post">
+          <input type="submit" value="Change Password" class="buttons btn btn-lg btn-primary btn-block">
+        </form>
+      </div>
+    </div>
       
       
       

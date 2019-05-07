@@ -15,21 +15,24 @@
   
   <body>
       <!-- NAVBAR -->
-       <nav class="navbar navbar-light" id="mainNav">
+   <nav class="navbar navbar-light" id="mainNav">
       <div class="container">
-          <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"> UALR Scholarships </a>
+          <a href="#page-top"class="navbar-brand js-scroll-trigger"><img src="img/navualr.png"> Scholarships</a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home Page</a></li>
+              <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
               <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
               <li class="nav-item"><a href ="Login.php" class="nav-link js-scroll-trigger">Register/Login</a></li>
+               <li class="nav-item"><a href ="Myprofile.php" class="nav-link js-scroll-trigger">My Profile</a></li>
+               <li class="nav-item"><a href ="Class List & Degree Plan.php" class="nav-link js-scroll-trigger">Degree/Classes</a></li>
+                <li class="nav-item"><a href ="logout.php" class="nav-link js-scroll-trigger">Log out</a></li>
               <li class="nav-item"><a href ="Contact.php" class="nav-link js-scroll-trigger">Contact</a></li>
               </ul>
           </div><!-- END nabarResponsive -->
       </div><!-- END container -->
    </nav>
-   <!-- NAVBAR --> 
+   <!-- END NAVBAR --> 
     
   <div id="scholarshipjumbo" class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -42,7 +45,8 @@
     
     
     
-    
+    <div class = "card">
+      <div class = "card-body">
   
   <h1>EIT General Scholarships</h1>
     <h2>Continuing Success Scholarship</h2>
@@ -82,18 +86,86 @@
     <h2>Society of Women Engineers – Mary L Good Endowed Scholarship</h2>
     <p>Awarded to full-time or part-time female students majoring in the College of Engineering and  Information Technology. Applicants must have achieved a 3.00 cumulative gpa.</p>
     
-    <h1>Computer Science Schloarships</h1>
+    <h1>Computer Science Scholarships</h1>
     <h2>Arkansas Academy of Computing Scholarship*</h2>
     <p>Awarded to a full-time or part-time student majoring in computer science or information science. Academic accomplishment and financial need will be strongly considered.</p>
     <h6>*Denotes scholarships available through more than one department.</h6>
+    
+    <br><br>
+    <h1>Other Scholarships</h1>
+            
+      <?php
+			$dbHost = "connect-c9.ckrgpw7vzckl.us-east-2.rds.amazonaws.com";
+			$dbUsername = "tbdUser";
+			$dbPassword = "TBD_coolRanchDoritos";
+			$dbName = "tbd_Database";
+			$dbPort = 3306;
+			
+			$db = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName, $dbPort);
+			
+			if ($db->connect_error) 
+			{
+			 die("Connection failed: " . $db->connect_error);
+			}
+		
+		        $db->set_charset("utf8");
+		        
+            $sql = "SELECT * FROM scholarships;";
+            $result = mysqli_query($db, $sql);
+    
+            $rcheck = mysqli_num_rows($result);
+                
+            echo "<table border='1'>
+            
+             <style>
+             th {
+                  background-color: #6F2232;
+                  color: white;
+                }
+                
+              td {
+                    text-align: left;
+                    padding: 4px;
+                }
+            
+            tr:nth-child(even) {background-color: #f2f2f2;}
+           </style>
+            
+            <tr>
+            <th>Name</th>
+            <th>Priority</th>
+            <th>Deadline</th>
+            <th>Description</th>
+            <th>Type</th>
+            </tr>";
+                
+            if($rcheck < 0)
+            {
+                echo "Error: The table was empty";
+            }
+            else
+            {
+                
+                while($row = mysqli_fetch_assoc($result))
+                {
+                    echo "<tr>";
+                    echo "<td>" . $row['name'] . "</td>";
+                    echo "<td>" . $row['priority'] . "</td>";
+                    echo "<td>" . $row['final'] . "</td>";
+                    echo "<td>" . $row['description'] . "</td>";
+                    echo "<td>" . $row['type'] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+            mysqli_close($con);
+            ?>
+        </div>
+    </div>
 
 
 
-
-
-
-
-<!-- Footer -->
+ <!-- Footer -->
  <div class="d-flex flex-column">
   <div id="footer">
     <div class="container-fluid ">
@@ -120,6 +192,9 @@
                 <li><a href="Login.php">Login</a></li>
                 <li><a href="newuser.php">Register</a></li>
                 <li><a href="Contact.php">Contact</a></li>
+                <li><a href="Class_List_&_Degree_plan.php">Classes and Degrees</a></li>
+                <li><a href="Userhome.php">User Home</a></li>
+                <li><a href="Clubs.php">Clubs</a></li>
               </ul>
             </div>             
           </div>          
@@ -141,8 +216,6 @@
 </div>
 
 <!-- END Footer -->
-  
-  
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

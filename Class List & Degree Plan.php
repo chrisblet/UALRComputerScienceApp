@@ -47,7 +47,81 @@
   
   
   
-  
+   <div class = "card">
+      <div class = "card-body">
+        <p>
+        CPSC Degrees:
+        <li><a href="/degrees/minor_cs.pdf">Minor</a></li>
+        <li><a href="/degrees/associates_of_science_cs.pdf">Associates of Science</a></li>
+        <li><a href="/degrees/bachelors_of_science_cs.pdf">Bachelor's of Science</a></li>
+        <li><a href="/degrees/bachelors_of_science_cs_game_option.pdf">Bachelor's of Science (Game Option)</a></li>
+        </p>
+            
+        <p>Courses</p>
+    
+      <?php
+			$dbHost = "connect-c9.ckrgpw7vzckl.us-east-2.rds.amazonaws.com";
+			$dbUsername = "tbdUser";
+			$dbPassword = "TBD_coolRanchDoritos";
+			$dbName = "tbd_Database";
+			$dbPort = 3306;
+			
+			$db = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName, $dbPort);
+			
+			if ($db->connect_error) 
+			{
+			 die("Connection failed: " . $db->connect_error);
+			}
+		
+		        $db->set_charset("utf8");
+            $sql = "SELECT * FROM classes;";
+            $result = mysqli_query($db, $sql);
+    
+            $rcheck = mysqli_num_rows($result);
+                
+            echo "<table border='1'>
+            
+           <style>
+             th {
+                  background-color: #6F2232;
+                  color: white;
+                }
+                
+              td {
+                    text-align: left;
+                    padding: 4px;
+                }
+            
+            tr:nth-child(even) {background-color: #f2f2f2;}
+           </style>
+            
+            <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Description</th>
+            </tr>";
+                
+            if($rcheck < 0)
+            {
+                echo "Error: The table was empty";
+            }
+            else
+            {
+                
+                while($row = mysqli_fetch_assoc($result))
+                {
+                    echo "<tr>";
+                    echo "<td>" . $row['cnumber'] . "</td>";
+                    echo "<td>" . $row['cname'] . "</td>";
+                    echo "<td>" . $row['description'] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+            mysqli_close($con);
+            ?>
+        </div>
+    </div>
   
   
   

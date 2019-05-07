@@ -78,7 +78,29 @@ if (empty($username) || empty($password)) {
           <input type="submit" value="Submit" class="buttons btn btn-lg btn-primary btn-block">
         </form>
       </div>
-    </div>    
+    </div>   
+    
+    
+    
+    <div class ="container col-9 col-md-5 col-xl-4" id="loginform">
+      <div class ="card">
+       <div class ="row text-center">
+        <div class ="col text-center text-white">
+            <h2>Change Username</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+        <div class="logForm col-9 col-md-9 align-self-center text-center">
+          <form action="changeusername.php" method="post">
+          <input type="text" name="oldusername" class="form-control" placeholder="Old Username"><br>  
+          <input type="text" name="newusername" class="form-control" placeholder="New Username"><br>
+          <input type="password" name="password" class="form-control" placeholder="Password"><br>
+          <input type="submit" value="Submit" class="buttons btn btn-lg btn-primary btn-block">
+        </form>
+        </div>
+        </div>
+      </div>
+    </div>
     
     
     <!-- Optional JavaScript -->
