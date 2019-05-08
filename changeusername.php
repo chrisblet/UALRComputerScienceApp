@@ -17,7 +17,7 @@ if (empty($username) || empty($password)) {
             changeUsername($_POST['oldusername'], $_POST['newusername'], $_POST['password']);
             setCookie("New Username", $_POST['username']);
             setCookie("Password", $_POST['password']);
-            header('Location: Myprofile.php');
+            header('Location: Userhome.php.php');
         }
         else
         {
@@ -69,16 +69,7 @@ if (empty($username) || empty($password)) {
   
   
   <body>
-    <div class ="container">
-      <div class="logForm col-md-2 offset-md-5 text-center">
-        <form action="changeusername.php" method="post">
-          <input type="text" name="oldusername" class="form-control" placeholder="Old Username"><br>  
-          <input type="text" name="newusername" class="form-control" placeholder="New Username"><br>
-          <input type="password" name="password" class="form-control" placeholder="Password"><br>
-          <input type="submit" value="Submit" class="buttons btn btn-lg btn-primary btn-block">
-        </form>
-      </div>
-    </div>   
+      
     
     
     
@@ -101,6 +92,57 @@ if (empty($username) || empty($password)) {
         </div>
       </div>
     </div>
+    
+    
+    
+    
+        <!-- Footer -->
+ <div class="d-flex flex-column">
+  <div id="footer">
+    <div class="container-fluid ">
+      <div class="row  ">
+        <div class="col-md-3 col-sm-3 col-12"><br>
+            <img src="img/UAFooter.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-4 col-sm-4 col-12"><br><br>
+            <span class="align-middle"><p class="lead text-white">UA Little Rock is a metropolitan research university in the South that provides accessibility to a quality education through flexible learning and unparalleled internship opportunities.</p></span>
+        </div>
+          
+        <div class ="col-md-3 col-sm-3 col-6 text-center">
+          <p class="lead text-white">
+              <br><br>
+              2801 S. University Ave.<br> Little Rock, AR 72204 <br><br> <b>501-569-3000</b></p>
+        </div>       
+          <div class = "col-md-2 col-sm-2 col-6 text-right" id="links">           
+            <div class="col-md-12   ">
+              <h1 class="font-weight-light mt-4 text-white">Links</h1>
+              <ul class="list-unstyled">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Scholarship.php">Scholarships</a></li>
+                <li><a href="Housing.php">Housing</a></li>
+                <li><a href="Login.php">Login</a></li>
+                <li><a href="newuser.php">Register</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+              </ul>
+            </div>             
+          </div>          
+      </div>     
+    </div>
+  </div>
+  
+    <footer id="sticky-footer" class=" text-white">
+    <div class="container text-center">
+      <small>Copyright &copy; ToBeDeveloped</small>
+        &emsp;
+        &emsp;
+    <a href ="https://www.facebook.com/ualittlerock"><i class ="fab fa-facebook-square fa-2x" ></i></a>
+        <a href ="https://twitter.com/UALR"><i class ="fab fa-twitter-square fa-2x"></i></a>
+        <a href ="https://www.youtube.com/user/UALRVIDEO"><i class ="fab fa-youtube-square fa-2x"></i></a>
+        <a href ="https://www.linkedin.com/groups/University-Arkansas-Little-Rock-UALR-65628/"><i class ="fab fa-linkedin fa-2x"></i></a>
+    </div>
+  </footer>
+</div>
+    
     
     
     <!-- Optional JavaScript -->

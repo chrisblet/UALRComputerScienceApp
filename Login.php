@@ -37,11 +37,12 @@ if (isset($_POST['username']) && isset($_POST['password']))
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home Page</a></li>
-              <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
+              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home</a></li>
               <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
+              <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
               <li class="nav-item"><a href ="Contact.php" class="nav-link js-scroll-trigger">Contact</a></li>
-              <li class="nav-item"><a href ="Userhome.php" class="nav-link js-scroll-trigger">User Home Place Holder</a></li>
+              <li class="nav-item"><a href ="Userhome.php" class="nav-link js-scroll-trigger">User Home</a></li>
+              <li class="nav-item"><a href ="logout.php" class="nav-link js-scroll-trigger">Log out</a></li>
               </ul>
           </div><!-- END nabarResponsive -->
       </div><!-- END container -->
@@ -76,104 +77,92 @@ if (isset($_POST['username']) && isset($_POST['password']))
   
   <div id="regbonus">
       <div class="container col col-md-9 col-xl-7 " >
-            <div class = "card">
+          <div class = "card">
             <div class ="row  text-white justify-content-center  ">
                 <div class ="col text-center"><br>
-          <h3> Register to Access Exclusive Content   </h3> <br></div>
-            </div>
-             
-    
-      <div class="row  justify-content-center">
-          
-           <div class="col-md-5 col-8 col-lg-5 ">
-               <div id="regcard">
-              <div class="card bg-dark text-center">
-      <div class="card-img-overlay">
-        <h5 class="card-title text-white text-drop">CS Resources</h5>
-        <p class="card-text"></p>
-        
-      </div>
-    </div>
-               </div>      
-            </div>  
-       <div class="col-md-5 col-8 col-lg-5 ">
-           <div id="regcard">
-          <div  class="card bg-dark text-white text-drop text-center">
-  
-  <div class="card-img-overlay">
-    <h5 class="card-title">UALR Events & Clubs</h5>
-    <p class="card-text"></p>
-    
+                  <h3> Register to Access Exclusive Content   </h3> <br></div>
+                </div>
+                  <div class="row  justify-content-center">
+                   <div class="col-md-5 col-8 col-lg-5 ">
+                     <div id="regcard">
+                        <div class="card bg-dark text-center">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title text-white text-drop">CS Resources</h5>
+                            <p class="card-text"></p>
+                          </div>
+                        </div>
+                     </div>      
+                    </div>  
+                     <div class="col-md-5 col-8 col-lg-5 ">
+                        <div id="regcard">
+                          <div  class="card bg-dark text-white text-drop text-center">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">UALR Events & Clubs</h5>
+                              <p class="card-text"></p>
+                            </div>
+                          </div>
+                        </div>       
+                      </div>
+                 </div>
+                  <div class="row  justify-content-center">
+                   <div class="col-md-5 col-8 col-lg-5">
+                      <div id="regcard">
+                      <div class="card bg-dark text-white text-drop text-center">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title">Job / Intership Board</h5>
+                        <p class="card-text"></p>
+                      </div>
+                      </div>
+                      </div> 
+                    </div>
+                     <div class="col-md-5 col-8 col-lg-5">
+                        <div id="regcard">
+                        <div class="card bg-dark text-white text-drop text-center">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title">Degree & Class List</h5>
+                            <p class="card-text"></p>
+                          </div>
+                        </div>
+                        </div>    
+                      </div>     
+                 </div><br>
+                  <div class ="row  justify-content-center">
+                  <a class="btn btn-primary" href="newuser.php" role="button">New Users Register Here</a></div><br>
+                  </div> 
+     </div> 
   </div>
-</div>
-    </div>       
-          </div>
-       </div>
-      <div class="row  justify-content-center">
-       <div class="col-md-5 col-8 col-lg-5">
-           <div id="regcard">
-          <div class="card bg-dark text-white text-drop text-center">
-  
-  <div class="card-img-overlay">
-    <h5 class="card-title">Job / Intership Board</h5>
-    <p class="card-text"></p>
-    
-  </div>
-</div>
-           </div> 
-          </div>
-       <div class="col-md-5 col-8 col-lg-5">
-           <div id="regcard">
-          <div class="card bg-dark text-white text-drop text-center">
-  
-  <div class="card-img-overlay">
-    <h5 class="card-title">Degree & Class List</h5>
-    <p class="card-text"></p>
-    
-  </div>
-</div>
-           </div>    
-          </div>     
-       </div><br>
-          <div class ="row  justify-content-center">
-              
-          <a class="btn btn-primary" href="newuser.php" role="button">New Users Register Here</a></div><br>
-      </div> 
-         </div> 
-          
-      </div>
   
   
     
     
     
-    <!-- Footer -->
+<!-- Footer -->
  <div class="d-flex flex-column">
   <div id="footer">
     <div class="container-fluid ">
       <div class="row  ">
-        <div class="col-md-3 col-sm-3 col-12"><br>
+        <div class="col-md-3 col-sm-12 col-12"><br>
             <img src="img/UAFooter.png" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-md-4 col-sm-4 col-12"><br><br>
+        <div class="col-md-4 col-sm-12 col-12"><br><br>
             <span class="align-middle"><p class="lead text-white">UA Little Rock is a metropolitan research university in the South that provides accessibility to a quality education through flexible learning and unparalleled internship opportunities.</p></span>
         </div>
           
-        <div class ="col-md-3 col-sm-3 col-6 text-center">
+        <div class ="col-md-3 col-sm-6 col-6 text-center">
           <p class="lead text-white">
               <br><br>
               2801 S. University Ave.<br> Little Rock, AR 72204 <br><br> <b>501-569-3000</b></p>
         </div>       
-          <div class = "col-md-2 col-sm-2 col-6 text-right" id="links">           
+          <div class = "col-md-2 col-sm-6 col-6 text-right" id="links">           
             <div class="col-md-12   ">
               <h1 class="font-weight-light mt-4 text-white">Links</h1>
               <ul class="list-unstyled">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="Scholarship.php">Scholarships</a></li>
                 <li><a href="Housing.php">Housing</a></li>
-                <li><a href="Login.php">Login</a></li>
-                <li><a href="newuser.php">Register</a></li>
                 <li><a href="Contact.php">Contact</a></li>
+                <li><a href="Login.php">Login/Register</a></li>
+                <li><a href="Userhome.php">User Home</a></li>
               </ul>
             </div>             
           </div>          

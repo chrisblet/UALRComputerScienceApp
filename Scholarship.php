@@ -21,13 +21,13 @@
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
+              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home</a></li>
               <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
-              <li class="nav-item"><a href ="Login.php" class="nav-link js-scroll-trigger">Register/Login</a></li>
-               <li class="nav-item"><a href ="Myprofile.php" class="nav-link js-scroll-trigger">My Profile</a></li>
-               <li class="nav-item"><a href ="Class List & Degree Plan.php" class="nav-link js-scroll-trigger">Degree/Classes</a></li>
-                <li class="nav-item"><a href ="logout.php" class="nav-link js-scroll-trigger">Log out</a></li>
               <li class="nav-item"><a href ="Contact.php" class="nav-link js-scroll-trigger">Contact</a></li>
+              <li class="nav-item"><a href ="Login.php" class="nav-link js-scroll-trigger">Login/Register</a></li>
+              <li class="nav-item"><a href ="Userhome.php" class="nav-link js-scroll-trigger">User Home</a></li>
+              <li class="nav-item"><a href ="logout.php" class="nav-link js-scroll-trigger">Log out</a></li>
+              
               </ul>
           </div><!-- END nabarResponsive -->
       </div><!-- END container -->
@@ -170,31 +170,28 @@
   <div id="footer">
     <div class="container-fluid ">
       <div class="row  ">
-        <div class="col-md-3 col-sm-3 col-12"><br>
+        <div class="col-md-3 col-sm-12 col-12"><br>
             <img src="img/UAFooter.png" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-md-4 col-sm-4 col-12"><br><br>
+        <div class="col-md-4 col-sm-12 col-12"><br><br>
             <span class="align-middle"><p class="lead text-white">UA Little Rock is a metropolitan research university in the South that provides accessibility to a quality education through flexible learning and unparalleled internship opportunities.</p></span>
         </div>
           
-        <div class ="col-md-3 col-sm-3 col-6 text-center">
+        <div class ="col-md-3 col-sm-6 col-6 text-center">
           <p class="lead text-white">
               <br><br>
               2801 S. University Ave.<br> Little Rock, AR 72204 <br><br> <b>501-569-3000</b></p>
         </div>       
-          <div class = "col-md-2 col-sm-2 col-6 text-right" id="links">           
+          <div class = "col-md-2 col-sm-6 col-6 text-right" id="links">           
             <div class="col-md-12   ">
               <h1 class="font-weight-light mt-4 text-white">Links</h1>
               <ul class="list-unstyled">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="Scholarship.php">Scholarships</a></li>
                 <li><a href="Housing.php">Housing</a></li>
-                <li><a href="Login.php">Login</a></li>
-                <li><a href="newuser.php">Register</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-                <li><a href="Class_List_&_Degree_plan.php">Classes and Degrees</a></li>
+                <li><a href="Login.php">Login/Register</a></li>
                 <li><a href="Userhome.php">User Home</a></li>
-                <li><a href="Clubs.php">Clubs</a></li>
               </ul>
             </div>             
           </div>          

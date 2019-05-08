@@ -1,3 +1,18 @@
+ <?php
+$username = $_COOKIE["Username"];
+$password = $_COOKIE["Password"];
+
+if (empty($username) || empty($password)) {
+  echo "<script> alert('You are not logged in.')</script>";
+  header('Location: Login.php');
+} else {
+  
+}
+
+?>
+ 
+ 
+ <html lang="en">
  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,13 +34,12 @@
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href ="index.php" class="nav-link js-scroll-trigger">Home</a></li>
               <li class="nav-item"><a href ="Scholarship.php" class="nav-link js-scroll-trigger">Scholarship Opportunities</a></li>
               <li class="nav-item"><a href ="Housing.php" class="nav-link js-scroll-trigger">Housing Information</a></li>
-              <li class="nav-item"><a href ="Login.php" class="nav-link js-scroll-trigger">Register/Login</a></li>
-               <li class="nav-item"><a href ="Myprofile.php" class="nav-link js-scroll-trigger">My Profile</a></li>
-               <li class="nav-item"><a href ="Class List & Degree Plan.php" class="nav-link js-scroll-trigger">Degree/Classes</a></li>
-                <li class="nav-item"><a href ="logout.php" class="nav-link js-scroll-trigger">Log out</a></li>
               <li class="nav-item"><a href ="Contact.php" class="nav-link js-scroll-trigger">Contact</a></li>
+              <li class="nav-item"><a href ="Userhome.php" class="nav-link js-scroll-trigger">User Home</a></li>
+              <li class="nav-item"><a href ="logout.php" class="nav-link js-scroll-trigger">Log out</a></li>
               </ul>
           </div><!-- END nabarResponsive -->
       </div><!-- END container -->
@@ -34,14 +48,47 @@
   
   
  <body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+     
+<div id="clubjumbo" class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-white text-drop">Clubs & Events</h1>
+    <p class="lead text-white tag-line col-md-9 col-lg-8">Start building your resume and make meaningful connections by joining a club or participate with the student body by attending university events.</p>
+  </div>
+</div> 
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="Userhome.php">Userhome</a></li>
+    <li class="breadcrumb-item"><a href="CS Resources.php">CS Resources</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Events & Clubs</li>
+    <li class="breadcrumb-item"><a href="https://ualr.edu/eit/jobs/">Job & Interships</a></li>
+    <li class="breadcrumb-item"><a href="Class List & Degree Plan.php">Degree & Class</a></li>
+  </ol>
+</nav>
+
+<br>
+ <div class ="container">
+     <div class ="card">
+         <div class="card-body">
+      <h5 class="card-title">Events @ UALR</h5>
+      <p class="card-text">The UALR Events page lists all upcoming College events on campus, ranging from world-class speakers to events coordinated by our diverse student organizations.
+
+Click the link below to view upcoming events on the University of Arkansas Little Rock campus!</p>
+    </div>
+   <div class ="row justify-content-center">
+      <div class="logForm col-6 col-md-6 text-center">
+        <form action="https://ualr.edu/www/events/" method="post">
+          <input type="submit" value="UALR Events" class="buttons btn btn-lg btn-primary btn-block">
+        </form>
+      </div>
+    </div>
+    </div>
+</div>
+<br>
+   
   <div class = "card">
       <div class = "card-body">
+          <div class ="row justify-content-center">
             
       <?php
 			$dbHost = "connect-c9.ckrgpw7vzckl.us-east-2.rds.amazonaws.com";
@@ -85,12 +132,8 @@
             <tr>
             <th>Club Name</th>
             <th>Type</th>
-            <th>President</th>
-            <th>Email</th>
-            <th>Number</th>
             <th>Advisor</th>
             <th>Email</th>
-            <th>Number</th>
             </tr>";
                 
             if($rcheck < 0)
@@ -105,51 +148,45 @@
                     echo "<tr>";
                     echo "<td>" . $row['club_name'] . "</td>";
                     echo "<td>" . $row['club_type'] . "</td>";
-                    echo "<td>" . $row['president'] . "</td>";
-                    echo "<td>" . $row['pres_email'] . "</td>";
-                    echo "<td>" . $row['pres_number'] . "</td>";
                     echo "<td>" . $row['advisor_name'] . "</td>";
                     echo "<td>" . $row['advisor_email'] . "</td>";
-                    echo "<td>" . $row['advisor_number'] . "</td>";
                     echo "</tr>";
                 }
                 echo "</table>";
             }
             mysqli_close($con);
             ?>
+            </div>
         </div>
     </div>
         
- <!-- Footer -->
+<!-- Footer -->
  <div class="d-flex flex-column">
   <div id="footer">
     <div class="container-fluid ">
       <div class="row  ">
-        <div class="col-md-3 col-sm-3 col-12"><br>
+        <div class="col-md-3 col-sm-12 col-12"><br>
             <img src="img/UAFooter.png" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-md-4 col-sm-4 col-12"><br><br>
+        <div class="col-md-4 col-sm-12 col-12"><br><br>
             <span class="align-middle"><p class="lead text-white">UA Little Rock is a metropolitan research university in the South that provides accessibility to a quality education through flexible learning and unparalleled internship opportunities.</p></span>
         </div>
           
-        <div class ="col-md-3 col-sm-3 col-6 text-center">
+        <div class ="col-md-3 col-sm-6 col-6 text-center">
           <p class="lead text-white">
               <br><br>
               2801 S. University Ave.<br> Little Rock, AR 72204 <br><br> <b>501-569-3000</b></p>
         </div>       
-          <div class = "col-md-2 col-sm-2 col-6 text-right" id="links">           
+          <div class = "col-md-2 col-sm-6 col-6 text-right" id="links">           
             <div class="col-md-12   ">
               <h1 class="font-weight-light mt-4 text-white">Links</h1>
               <ul class="list-unstyled">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="Scholarship.php">Scholarships</a></li>
                 <li><a href="Housing.php">Housing</a></li>
-                <li><a href="Login.php">Login</a></li>
-                <li><a href="newuser.php">Register</a></li>
                 <li><a href="Contact.php">Contact</a></li>
-                <li><a href="Class_List_&_Degree_plan.php">Classes and Degrees</a></li>
+                <li><a href="Login.php">Login/Register</a></li>
                 <li><a href="Userhome.php">User Home</a></li>
-                <li><a href="Clubs.php">Clubs</a></li>
               </ul>
             </div>             
           </div>          
@@ -172,4 +209,12 @@
 
 <!-- END Footer -->
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
 </body>
+</html>
