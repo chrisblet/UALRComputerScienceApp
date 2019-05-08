@@ -17,8 +17,6 @@ $password = $_COOKIE["Password"];
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="gridstyle.css">
-     <link rel="stylesheet" href="gridsize.js">
-    
     <title>UALR-Housing Information</title>
   </head>
   
@@ -51,8 +49,8 @@ $password = $_COOKIE["Password"];
 </div>  
      
      
-   <div class = "card">
-      <div class = "card-body">  
+  <div class = "card">
+  <div class = "card-body">  
   
   <h1>Campus Living Options</h1>
     <p>Living on campus at UA Little Rock is an opportunity to be in the middle of it all. Being a part of a residential community has many perks, from a greater chance at academic success to a built-in social setting that is brimming with possibility.</p>
@@ -62,43 +60,51 @@ $password = $_COOKIE["Password"];
   
         <!-- The grid: three columns -->
       <div class="row">
-        <div class="column" onclick="openTab('b1');" style="background:green;">North/South Hall</div>
-        <div class="column" onclick="openTab('b2');" style="background:blue;">West/East Hall</div>
-        <div class="column" onclick="openTab('b3');" style="background:red;">University Village</div>
+        <div class="column" onclick="openTab('b1');" style="background:#5e1111;">North/South Hall</div>
+        <div class="column" onclick="openTab('b2');" style="background:#5e1111;">West/East Hall</div>
+        <div class="column" onclick="openTab('b3');" style="background:#5e1111;">University Village</div>
       </div>
       
       <!-- The expanding grid (hidden by default) -->
-      <div id="b1" class="containerTab" style="display:none;background:green">
+      <div id="b1" class="containerTab" style="display:none;background:#6c757d">
         <!-- If you want the ability to close the container, add a close button -->
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>North/South Hall</h2>
-        <p>North and South Halls are apartment-style communities offering a more independent experience for upperclassmen who want first-class amenities plus the convenience of the campus location. Two- and four-bedroom units feature full kitchens, private bedrooms with a full-size bed, and washer/dryer appliances in each apartment.
+          <p>North and South Halls are apartment-style communities offering a more independent experience for upperclassmen who want first-class amenities plus the convenience of the campus location. Two- and four-bedroom units feature full kitchens, private bedrooms with a full-size bed, and washer/dryer appliances in each apartment.
             <h2>Commons Apartments Room Costs, Fall 2017:</h2>
-            <p>The four bedroom apartments are $2,734 per semester including utilities. The two bedroom apartments are $2,999 per semester including utilities. There is a $16 activity fee per semester. Charges are billed to the student account and subject to the payment terms of the university.</p>
-            
-            <p>While UA Little Rock is closed during Thanksgiving, Christmas, and Spring Break, University Commons remains open at no additional charge to the resident. Restrictions apply. Refer to your lease for details.</p>
+              <p>The four bedroom apartments are $2,734 per semester including utilities. The two bedroom apartments are $2,999 per semester including utilities. There is a $16 activity fee per semester. Charges are billed to the student account and subject to the payment terms of the university.</p>
+              <p>While UA Little Rock is closed during Thanksgiving, Christmas, and Spring Break, University Commons remains open at no additional charge to the resident. Restrictions apply. Refer to your lease for details.</p>
+            <img src="img/North_South_Hall.png" class="img-fluid" alt="Responsive image">
       </div>
       
-      <div id="b2" class="containerTab" style="display:none;background:blue">
+      <div id="b2" class="containerTab" style="display:none;background:#6c757d">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>West/East Hall</h2>
-        <p>West Hall is our new state-of-the-art residence hall. West Hall is composed of two 6-story buildings (one men’s and one women’s) connected by a central lobby. Both buildings have restricted card access, security systems, Ethernet/wireless internet, emergency phones, and dedicated public safety patrols.</p>
-        <h3>Pod Style Communities</h3>
-        <ul>Private hall baths</ul>
-        <ul>Vanity & sink in every room</ul>
-        <ul>Furnished double bedrooms</ul>
-        <ul>Study room and coin-free washers & dryers</ul>
-        <ul>Kitchen, living room, and dining room in each pod</ul>
+          <p>West Hall is our new state-of-the-art residence hall. West Hall is composed of two 6-story buildings (one men’s and one women’s) connected by a central lobby. Both buildings have restricted card access, security systems, Ethernet/wireless internet, emergency phones, and dedicated public safety patrols.</p>
+            <h3>Pod Style Communities</h3>
+              <ul>Private hall baths</ul>
+              <ul>Vanity & sink in every room</ul>
+              <ul>Furnished double bedrooms</ul>
+              <ul>Study room and coin-free washers & dryers</ul>
+              <ul>Kitchen, living room, and dining room in each pod</ul>
+          <img src="img/East_Hall.png" class="img-fluid" alt="Responsive image">
       </div>
       
-      <div id="b3" class="containerTab" style="display:none;background:red">
+      <div id="b3" class="containerTab" style="display:none;background:#6c757d">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         <h2>University Village</h2>
-        <p>This is some stuff about the village.</p>
-      </div>
-
-</div>
-</div>
+        <p>University Village is a 420-bed residence complex for sophomores, juniors, seniors, and graduate students featuring two and four bedroom apartment-style suites with private baths and a resort-style swimming pool with community amenities.
+           <h3> University Village Room Costs, Fall 2017:</h3>
+            The four bedroom apartments are $2,734 per semester including utilities. The two bedroom apartments are $2,999 per semester including utilities. There is a $16 activity fee per semester. Charges are billed to the student account and subject to the payment terms of the university.
+           </p> 
+           <p> While UA Little Rock is closed during Thanksgiving, Christmas, and Spring Break, University Village remains open at no additional charge to the resident. Restrictions apply. Refer to your lease for details.</p>
+         <h3>Two Bedroom:</h3>
+         <img src="img/Village_Four.png" class="img-fluid" alt="Responsive image">
+         <h3>Four Bedroom:</h3>
+         <img src="img/Village_Two.png" class="img-fluid" alt="Responsive image">
+       </div>
+    </div>
+  </div>
 
 
 
@@ -151,19 +157,12 @@ $password = $_COOKIE["Password"];
 
 <!-- END Footer -->
 
-
-
-
-
-
-
-
-
  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="gridsize.js"></script>
   </body>
 </html>

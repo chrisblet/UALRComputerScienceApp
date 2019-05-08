@@ -23,13 +23,13 @@ use tbd_Database;
 
 **Common SQL commands:
 // to create a table:
-CREATE TABLE users ()
-    username VARCHAR(255) PRIMARY KEY
-    //password VARCHAR(255)
+CREATE TABLE users (
+    username VARCHAR(255) PRIMARY KEY,
+    password VARCHAR(255)
 );
 
 // to add values to an existing column
-INSERT INTO users (username)
+INSERT INTO users (username, password)
 VALUES
     ('student1'),
     ('student2');
